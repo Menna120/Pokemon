@@ -10,7 +10,7 @@ A simple Android application that displays a list of Pokemon with their details.
 
 ## Screenshot
 
-![Pokemon App Screenshot](screenshots/Pokemon_App_Screenshot.png)
+<img src="screenshots/Pokemon_App_Screenshot.png" width="300" alt="Pokemon App Screenshot">
 
 ## Built With
 
