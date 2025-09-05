@@ -90,11 +90,11 @@ fun PokemonCard(pokemon: Pokemon, modifier: Modifier = Modifier) {
                 modifier = Modifier
                     .drawBehind {
                         drawCircle(
-                            color = Color.White.copy(alpha = .5f),
+                            color = Color.White.copy(alpha = .2f),
                             radius = this.size.maxDimension / 2f
                         )
                     }
-                    .size(100.dp)
+                    .size(120.dp)
             )
         }
     }
