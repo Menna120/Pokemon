@@ -17,7 +17,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.draw.drawBehind
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.SpanStyle
@@ -88,13 +87,8 @@ fun PokemonCard(pokemon: Pokemon, modifier: Modifier = Modifier) {
                 painter = painterResource(pokemon.image),
                 contentDescription = pokemon.name,
                 modifier = Modifier
-                    .drawBehind {
-                        drawCircle(
-                            color = Color.White.copy(alpha = .2f),
-                            radius = this.size.maxDimension / 2f
-                        )
-                    }
                     .size(120.dp)
+                    .background(color = Color.White.copy(alpha = .2f), CircleShape)
             )
         }
     }
